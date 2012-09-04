@@ -21,7 +21,8 @@ GEM
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
-  activerecord (= 3.2.6)
+  activerecord
   ffaker
