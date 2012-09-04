@@ -126,9 +126,10 @@ class ArrayTest < Test::Unit::TestCase
 
   # sometimes we accidentally build arrays that have unintended nil objects, remove them from this array
   def test_fix_nil_array
+    skip
     array = []
     array_one = [1, nil, 2, 3, 4, nil, 5, nil]
-    array= array_one.compact!
+    array_one.compact
     assert_equal [1,2,3,4,5], array
   end
 
